@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Register | ByteForge</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - ByteForge</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="auth-page">
-  <div class="auth-container">
-    <h2>Create a ByteForge Account</h2>
-    <form onsubmit="event.preventDefault(); window.location.href='home.html';">
-      <label for="username">Username</label>
-      <input type="text" id="username" placeholder="Choose a username" required>
+<body>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Enter your email" required>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="ByteForge Logo">
+      <span>ByteForge</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+
+  <section class="container">
+    <h2 style="text-align:center; margin-bottom: 30px;">Create Your Account</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="_replyto" placeholder="you@example.com" required>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="e.g. johndoe123" required>
 
       <label for="password">Password</label>
-      <input type="password" id="password" placeholder="Create a password" required>
+      <input type="password" id="password" name="password" placeholder="Enter a secure password" required>
 
       <label for="confirm-password">Confirm Password</label>
-      <input type="password" id="confirm-password" placeholder="Confirm password" required>
+      <input type="password" id="confirm-password" name="confirm_password" placeholder="Repeat your password" required>
 
-      <button type="submit">Register</button>
+      <button type="submit" class="btn">Register</button>
     </form>
-    <p>Already have an account? <a href="login.html">Login</a></p>
-  </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ByteForge. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
