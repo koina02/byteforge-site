@@ -1,87 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - ByteForge</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f1f1f1;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 4rem auto;
-      padding: 2rem;
-      background-color: #ffffff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
-
-    h2 {
-      text-align: center;
-      color: #1D2955;
-    }
-
-    label {
-      display: block;
-      margin-top: 1rem;
-      color: #333;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 0.8rem;
-      margin-top: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
-      font-family: inherit;
-    }
-
-    button {
-      margin-top: 1.5rem;
-      padding: 0.9rem;
-      width: 100%;
-      border: none;
-      background-color: #1D2955;
-      color: white;
-      font-size: 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #100C24;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        margin: 2rem 1rem;
-        padding: 1.5rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteForge - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" required />
+    <header>
+        <nav>
+            <a href="/" class="logo">ByteForge</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" required />
+    <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/mvondnzw" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
 
-      <label for="message">Message</label>
-      <textarea name="message" id="message" rows="5" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+    <footer>
+        <p>&copy; 2025 ByteForge. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

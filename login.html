@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login - ByteForge</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteForge - Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Login</h2>
-    <form action="#" method="POST">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
+    <header>
+        <nav>
+            <a href="/" class="logo">ByteForge</a>
+        </nav>
+    </header>
 
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required />
+    <section class="login-form">
+        <h2>Login to Your Account</h2>
+        <form action="#" method="POST" id="loginForm">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit" class="btn-primary">Log In</button>
+            <p>Don't have an account? <a href="/register.html">Sign Up</a></p>
+        </form>
+    </section>
 
-      <button type="submit">Login</button>
-    </form>
-    <p style="text-align: center; margin-top: 1rem;">
-      Don't have an account? <a href="register.html" style="color: #1D2955;">Register here</a>
-    </p>
-  </div>
+    <footer>
+        <p>&copy; 2025 ByteForge. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
