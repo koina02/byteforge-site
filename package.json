@@ -1,0 +1,21 @@
+{
+  "name": "byteforge-ui",
+  "version": "1.0.0",
+  "description": "A simple UI project",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "vite": "^3.0.0"
+  },
+  "devDependencies": {
+    "vite-plugin-react": "^1.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
