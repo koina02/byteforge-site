@@ -1,203 +1,59 @@
-/* General Styles */
+/* === Base Theme === */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #000000;
+    color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #007bff;
-    padding: 15px;
+a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+/* === Unique Side Nav === */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: #111;
+    border-right: 3px solid #FFD700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFD700;
+    margin-bottom: 40px;
 }
 
 nav a {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    margin: 0 15px;
+    font-size: 1.4rem;
+    margin: 20px 0;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-    background: url('hero-image.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-}
-
-.hero h1 {
-    font-size: 3rem;
-}
-
-.hero .btn-primary {
-    background-color: #ff5733;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.hero .btn-primary:hover {
-    background-color: #c13a1a;
-}
-.hero {
-  background: linear-gradient(to right, #1D2955, #3498db);
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.hero .btn-primary {
-  background: white;
-  color: #1D2955;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 40px 20px;
-  background: #f1f1f1;
-}
-
-.service-card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  width: 300px;
-  margin: 10px;
-  padding: 20px;
-  transition: 0.3s;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-}
-/* Services Section */
-.services {
+nav .socials {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.service-card {
-    background-color: #fff;
+main {
+    margin-left: 100px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    text-align: center;
-}
-
-.service-card img {
-    width: 50px;
-    margin-bottom: 20px;
-}
-
-.service-card h3 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-}
-
-.service-card p {
-    font-size: 1rem;
-    color: #777;
-}
-
-/* Login Form */
-.login-form {
-    max-width: 400px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.login-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.login-form input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-.login-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.login-form button:hover {
-    background-color: #0056b3;
-}
-
-/* Contact Form */
-.contact-form {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #ff5733;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #c13a1a;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
