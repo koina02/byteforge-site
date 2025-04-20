@@ -1,59 +1,143 @@
-/* === Base Theme === */
+/* Base styles for light theme */
 body {
-    background-color: #000000;
-    color: #f5f5f5;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #fff;
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-    color: #FFD700;
-    text-decoration: none;
-    transition: all 0.3s ease;
+/* Light theme styles */
+.light-theme {
+  background-color: #f5f5f5;
+  color: #111;
 }
 
-a:hover {
-    color: white;
-    transform: scale(1.05);
+.light-theme header {
+  background-color: #ddd;
 }
 
-/* === Unique Side Nav === */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 80px;
-    background-color: #111;
-    border-right: 3px solid #FFD700;
+.light-theme .nav-links a {
+  color: #000;
+}
+
+.light-theme h1, .light-theme h2 {
+  color: #000;
+}
+
+.light-theme form button {
+  background: #222;
+  color: #FFD700;
+}
+
+/* Navbar styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #333;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+/* Mobile responsiveness - Hamburger menu */
+#nav-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30px;
+  width: 30px;
+}
+
+#nav-toggle .line {
+  height: 4px;
+  width: 30px;
+  background-color: #FFD700;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links.active {
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background-color: #111;
+  width: 100%;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  #nav-toggle {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-    z-index: 1000;
+  }
 }
 
-nav .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #FFD700;
-    margin-bottom: 40px;
+/* Scroll Reveal styles */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
 }
 
-nav a {
-    font-size: 1.4rem;
-    margin: 20px 0;
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-nav .socials {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+/* Section Styles */
+section {
+  padding: 4rem 2rem;
+  margin: 2rem 0;
+  text-align: center;
 }
 
-main {
-    margin-left: 100px;
-    padding: 20px;
+#hero {
+  background-color: #222;
+  color: #fff;
+}
+
+#about, #projects, #services, #contact {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Button Styles */
+.theme-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #FFD700;
+  border: none;
+  cursor: pointer;
+}
+
+.theme-btn:hover {
+  background-color: #ccc;
 }

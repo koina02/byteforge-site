@@ -1,72 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="your-logo.png" alt="ByteForge Logo">
-      <span>ByteForge</span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="register.html">Register</a></li>
-    </ul>
-  </nav>
-</header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ByteForge - Innovating the Future of Digital Solutions">
+  <meta name="author" content="Ian Koina">
+  <title>ByteForge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <!-- Navbar -->
-<nav>
-  <div class="logo">ByteForge</div>
-  <div class="menu-toggle" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <ul id="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="login.html">Login</a></li>
-  </ul>
-</nav>
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" class="theme-btn">Switch Theme</button>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Your Tech Solutions Start Here</h1>
-            <p>Innovative solutions that empower your business</p>
-            <a href="services.html" class="cta-btn">Explore Our Services</a>
-        </div>
-    </section>
+  <!-- Navigation -->
+  <header>
+    <div id="nav-toggle" class="hamburger-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul id="nav-links" class="nav-links">
+      <li><a href="#hero">🏠 Home</a></li>
+      <li><a href="#about">👤 About</a></li>
+      <li><a href="#projects">🛠️ Projects</a></li>
+      <li><a href="#services">⚙️ Services</a></li>
+      <li><a href="#contact">✉️ Contact</a></li>
+    </ul>
+  </header>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class
-<section class="hero">
-  <h1>Welcome to ByteForge</h1>
-  <p>Your One-Stop Digital Solution Hub</p>
-  <a href="#services" class="btn-primary">Explore Services</a>
-</section>
+  <!-- Sections -->
+  <section id="hero">
+    <h1>Welcome to ByteForge</h1>
+    <p>Your gateway to digital innovation</p>
+  </section>
 
-<section id="services" class="services">
-  <div class="service-card">
-    <h3>App Development</h3>
-    <p>Build scalable mobile and web apps.</p>
-  </div>
-  <div class="service-card">
-    <h3>Blockchain Solutions</h3>
-    <p>Decentralized systems for the future.</p>
-  </div>
-  <div class="service-card">
-    <h3>Security & Privacy</h3>
-    <p>Secure data, privacy-first policies.</p>
-  </div>
- <div class="service-card">
-    <h3>CyberSecurity Services</h3>
-    <p>Security Audit, System Development.</p>
-  </div>
-</section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We build the future, one line of code at a time.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Our Projects</h2>
+    <p>Explore the impactful solutions we've crafted.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We provide cutting-edge software and digital solutions.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions? Get in touch!</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
